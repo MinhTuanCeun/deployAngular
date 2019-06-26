@@ -1,0 +1,47 @@
+<!-- <div *ngFor="let feed of feeds">
+    <div class="profile">
+
+    </div>
+    <div class="content">
+        <h4>{{feed.message}}</h4>
+        <img src={{feed.full_picture}} alt="">
+    </div>
+</div> -->
+
+<div *ngFor="let feed of feeds" class="feed">
+    <div class="profile">
+        <img src={{profile.picture.data.url}} alt="">
+        <div class="text">
+            <h4>{{profile.name}}</h4>
+            <span>{{fommatDate(feed.created_time)}}</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="mess-content">
+            <p>{{feed.message}}</p>
+        </div>
+        <div class="img-content">
+            <img src={{feed.full_picture}} alt="">
+        </div>
+        <div class="likes">
+            <p>Yim wah và 8 người khác</p>
+        </div>
+        <div class="reaction">
+            <a href="">
+                Thích
+            </a>
+            <a href="">
+                Bình luận
+            </a>
+            <a href="">
+                Chia sẽ
+            </a>
+        </div>
+        <div class="coment">
+            <img src="https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=2065388450228746&height=50&width=50&ext=1564023729&hash=AeRoD7WN8ZDRUt0b" alt="">
+            <div class="input-comennt">
+                <input type="text" placeholder="Viết bình luận">
+            </div>
+        </div>
+    </div>
+</div>

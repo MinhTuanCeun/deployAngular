@@ -1,14 +1,47 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>LoginFb</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+    <meta charset="utf-8">
+    <title>LoginFb</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
-  <app-root></app-root>
+    <app-root></app-root>
+
+    <!-- <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '671068983320799',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v3.3'
+            });
+
+            FB.login(function(response) {
+                console.log("TCL: window.fbAsyncInit -> response", response)
+                if (response.authResponse) {
+                    console.log('Welcome!  Fetching your information.... ');
+                    FB.api('/me', function(response) {
+                        console.log('Good to see you, ' + response.name + '.');
+                    });
+                } else {
+                    console.log('User cancelled login or did not fully authorize.');
+                }
+            });
+        };
+    </script> -->
+    <!-- <script async defer type="text/javascript" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
+
+    <!-- chuyen ma ngan han sang dai hang -->
+    <!-- https://graph.facebook.com/oauth/access_token?%20grant_type=fb_exchange_token&%20client_id=671068983320799&%20client_secret=8a39ae389e9b8dfabff3822e374ea06a&%20fb_exchange_token=EAAJiVWxe4N8BAEenygsbfccswwojcKE44JNwEop16OJ9fXhKjwX4ZBpgw9V6bCs8dgzJJq0bES8KDcZCkvPRlXyCzGvJ6x9eNnSSU3rZAoaI0PgZCONvAEASN1JX6JtRbgFEZBLBV85jVZA1jL2hyiofQIAgq4KE5SbwXo0UpqFMeYZBcWZC5BE6NZCj5S1qd9DmvpJqI3ZAIWmQZDZD -->
+    <!-- <div id="fb-root"></div> -->
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=671068983320799&autoLogAppEvents=1"></script>
 </body>
+
 </html>

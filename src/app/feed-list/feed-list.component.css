@@ -1,0 +1,85 @@
+.feed {
+    margin: 20px;
+    width: 600px;
+    height: auto;
+    background: #cec6c6;
+    position: relative;
+}
+
+.profile {
+    display: flex;
+    margin: 10px;
+    padding-top: 15px;
+}
+
+.profile img {
+    border-radius: 50%;
+}
+
+.text {
+    margin: 0 10px;
+}
+
+.text h4 {
+    margin: 6px 0;
+    color: aqua;
+}
+
+.mess-content {
+    margin: 10px;
+}
+
+.img-content img {
+    width: 100%;
+    margin: 0
+}
+
+.likes p {
+    margin: 5px;
+    margin-left: 10px;
+    border-bottom: 1px grey solid;
+}
+
+.reaction {
+    margin: 0 20px;
+    padding: 10px;
+    display: grid;
+    grid: auto / auto auto auto;
+    text-align: center;
+    border-bottom: 1px grey solid;
+}
+
+.reaction a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #0c4252;
+}
+
+.coment {
+    display: grid;
+    grid: 100% / 10% 80% 10%;
+    margin: 10px;
+    padding: 5px 0;
+}
+
+.coment img {
+    align-self: center;
+    border-radius: 50%;
+}
+
+.input-comennt {
+    height: 40px;
+    margin: 2% 0;
+    border: 1px solid #c3c3c3;
+    background: #b3b2b3;
+    border-radius: 20px;
+    display: flex;
+}
+
+.input-comennt input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    margin-left: 20px;
+}
